@@ -1,0 +1,20 @@
+{
+  "eval_id": "vcf_qc_002_titv_ratio",
+  "category": "vcf_qc",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "|1.5 - 1.5| = 0; abs_tol=0.01, rel_tol=0.005 -> pass",
+  "expected": 1.5,
+  "actual": 1.5,
+  "elapsed_sec": 22.134,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/vcf_qc_002_titv_ratio",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": false,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

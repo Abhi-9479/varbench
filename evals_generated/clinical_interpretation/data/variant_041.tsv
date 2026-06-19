@@ -1,0 +1,10 @@
+field	value
+gene	BRCA2
+hgvs	NM_000059.4(BRCA2):c.7007+3851C>T
+chrom	13
+pos	32350747
+ref	C
+alt	T
+variant_type	single nucleotide variant
+last_evaluated_year	2015
+annotation_source	NCBI ClinVar

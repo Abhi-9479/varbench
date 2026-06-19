@@ -1,0 +1,26 @@
+{
+  "id": "vcf_qc_002_titv_ratio",
+  "category": "vcf_qc",
+  "subcategory": "summary_metric",
+  "title": "Compute the Ti/Tv ratio of a VCF",
+  "description": "Compute the transition-to-transversion ratio for a 20-variant VCF. Transitions are purine<->purine (A<->G) and pyrimidine<->pyrimidine (C<->T) substitutions; transversions are everything else. Tests numeric output with tolerance.",
+  "task_prompt": "You are given a VCF file at sample_titv.vcf in your working directory. Compute the Ti/Tv ratio: the count of transition substitutions divided by the count of transversion substitutions across all variant records. Transitions are A<->G and C<->T. Transversions are A<->C, A<->T, G<->C, G<->T. Consider only single-nucleotide substitutions (REF and ALT both one base). Write your answer as JSON to eval_answer.json with this exact schema: {\"titv_ratio\": <number>}. Report at least 3 decimal places.",
+  "inputs": [
+    {
+      "path": "sample_titv.vcf",
+      "source": "data/sample_titv.vcf",
+      "description": "20-variant synthetic VCF, Ti=12 Tv=8"
+    }
+  ],
+  "answer_key": "titv_ratio",
+  "expected_answer": 1.5,
+  "grader": {
+    "type": "numeric",
+    "tolerance": 0.01,
+    "rel_tolerance": 0.005
+  },
+  "difficulty": "easy",
+  "tags": ["vcf", "qc", "ti_tv", "numeric"],
+  "version": "0.1.0",
+  "notes": "12 transitions (A<->G x6, C<->T x6), 8 transversions (A<->T, A<->C, G<->C, G<->T pairs). True ratio 12/8 = 1.5 exactly. Absolute tolerance 0.01 allows for off-by-one rounding."
+}

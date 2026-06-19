@@ -1,0 +1,25 @@
+{
+  "id": "vcf_qc_001_count_pass_variants",
+  "category": "vcf_qc",
+  "subcategory": "filter_counting",
+  "title": "Count PASS variants",
+  "description": "Count how many variants in a small VCF have FILTER=PASS. Tests basic VCF parsing and FILTER-column awareness.",
+  "task_prompt": "You are given a VCF file at sample.vcf in your working directory. Count the number of variant records (non-header lines) where the FILTER column equals exactly 'PASS'. Write your answer as JSON to eval_answer.json with the schema: {\"n_pass\": <integer>}. Do not include header lines (lines starting with #) in your count.",
+  "inputs": [
+    {
+      "path": "sample.vcf",
+      "source": "data/sample.vcf",
+      "description": "Small synthetic VCF, 10 variants, mixed FILTER values"
+    }
+  ],
+  "answer_key": "n_pass",
+  "expected_answer": 6,
+  "grader": {
+    "type": "exact",
+    "case_sensitive": true
+  },
+  "difficulty": "easy",
+  "tags": ["vcf", "filter", "qc", "counting"],
+  "version": "0.1.0",
+  "notes": "First canonical eval. Synthetic VCF intentionally small so the entire problem is auditable by eye."
+}

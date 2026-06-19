@@ -1,0 +1,30 @@
+{
+  "id": "variant_filtering_003_multi_condition",
+  "category": "variant_filtering",
+  "subcategory": "compound_filter_4way",
+  "title": "Variants passing four simultaneous conditions",
+  "description": "Apply four filters jointly: FILTER=PASS AND per-sample DP>=30 AND genotype is heterozygous (0/1) AND chromosome is NOT chr3. Count survivors. Tests compositional filter logic with one unusual constraint (chromosome exclusion).",
+  "task_prompt": "You are given a VCF file at sample.vcf in your working directory. Apply ALL of the following four conditions and count how many variant records survive: (1) the FILTER column (column 7) is exactly 'PASS', (2) the per-sample read depth (DP subfield of the SAMPLE1 column at the position indicated by the FORMAT column) is >= 30, (3) the genotype (GT subfield) is exactly '0/1' (heterozygous), AND (4) the chromosome (column 1, CHROM) is NOT 'chr3'. Write your answer as JSON to eval_answer.json with this exact schema: {\"n_passing\": <integer>}.",
+  "inputs": [
+    {
+      "path": "sample.vcf",
+      "source": "../vcf_qc/data/sample.vcf",
+      "description": "Shared 10-variant synthetic VCF"
+    }
+  ],
+  "answer_key": "n_passing",
+  "expected_answer": 2,
+  "grader": {
+    "type": "exact",
+    "case_sensitive": true
+  },
+  "difficulty": "medium",
+  "tags": [
+    "vcf",
+    "filter",
+    "multi_condition",
+    "negation"
+  ],
+  "version": "0.1.0",
+  "notes": "Walking through the 10 variants: PASS rows are chr1:1000, chr1:3000, chr2:1500, chr2:2500, chr3:5000, chr3:7000. Of those: chr1:3000 is 1/1 (hom, fails GT); chr2:2500 has DP=22<30 (fails DP); chr3:5000 and chr3:7000 are chr3 (fails NOT-chr3) and also 1/1. Survivors: chr1:1000 (PASS, DP=30, 0/1, chr1) and chr2:1500 (PASS, DP=60, 0/1, chr2). Expected = 2. Authoring note: an earlier draft of this eval had expected_answer=3; Claude correctly returned 2 and the grader flagged the mismatch. Documented as a methodology lesson - hand-crafted ground truth is error-prone; future bulk-generated evals should derive expected answers programmatically."
+}

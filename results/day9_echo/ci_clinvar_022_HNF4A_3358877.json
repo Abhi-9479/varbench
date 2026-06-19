@@ -1,0 +1,13 @@
+{
+  "eval_id": "ci_clinvar_022_HNF4A_3358877",
+  "category": "clinical_interpretation",
+  "agent": "echo",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Uncertain_significance",
+  "actual": "Uncertain_significance",
+  "elapsed_sec": 0.0,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_022_HNF4A_3358877",
+  "error": null
+}

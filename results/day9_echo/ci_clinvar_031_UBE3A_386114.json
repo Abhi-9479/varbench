@@ -1,0 +1,13 @@
+{
+  "eval_id": "ci_clinvar_031_UBE3A_386114",
+  "category": "clinical_interpretation",
+  "agent": "echo",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Likely_benign",
+  "actual": "Likely_benign",
+  "elapsed_sec": 0.001,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_031_UBE3A_386114",
+  "error": null
+}

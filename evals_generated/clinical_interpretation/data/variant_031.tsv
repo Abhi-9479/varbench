@@ -1,0 +1,10 @@
+field	value
+gene	UBE3A
+hgvs	NM_130839.5(UBE3A):c.2281-20A>G
+chrom	15
+pos	25354446
+ref	T
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2024
+annotation_source	NCBI ClinVar

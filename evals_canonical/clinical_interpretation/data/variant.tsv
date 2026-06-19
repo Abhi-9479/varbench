@@ -1,0 +1,2 @@
+gene	hgvs_c	hgvs_p	consequence	clinvar_review_status	clinvar_classification	gnomad_af	functional_studies	notes
+BRCA1	c.68_69del	p.Glu23ValfsTer17	frameshift_variant	reviewed_by_expert_panel	Pathogenic	0.0	"Multiple LOF assays show abrogated homologous recombination repair"	"Ashkenazi Jewish founder mutation; commonly listed in HBOC syndrome panels"

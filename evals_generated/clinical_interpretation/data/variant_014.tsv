@@ -1,0 +1,10 @@
+field	value
+gene	GP1BB
+hgvs	NM_000407.5(GP1BB):c.269C>G (p.Pro90Arg)
+chrom	22
+pos	19724112
+ref	C
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

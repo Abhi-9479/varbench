@@ -1,0 +1,10 @@
+field	value
+gene	PMS2
+hgvs	NM_000535.7(PMS2):c.163+2T>C
+chrom	7
+pos	6005890
+ref	A
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2019
+annotation_source	NCBI ClinVar

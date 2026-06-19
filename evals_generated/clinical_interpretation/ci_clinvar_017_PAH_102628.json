@@ -1,0 +1,38 @@
+{
+  "id": "ci_clinvar_017_PAH_102628",
+  "category": "clinical_interpretation",
+  "subcategory": "clinvar_high_confidence_classification",
+  "title": "Classify PAH variant (ClinVar VarID 102628)",
+  "description": "Classify a single variant in PAH using its HGVS notation, coordinates, and variant type. Ground truth is ClinVar's reviewed by expert panel consensus classification (Likely pathogenic).",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It is a two-column 'field\\tvalue' table describing a single human genetic variant: gene, HGVS notation, genomic coordinates, ClinVar variant type, and provenance. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant_017.tsv",
+      "description": "Annotations for PAH NM_000277.3(PAH):c.205C>T (p.Pro69Ser)"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Likely_pathogenic",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "medium",
+  "tags": [
+    "clinvar",
+    "acmg",
+    "auto_generated",
+    "pah",
+    "likely_pathogenic"
+  ],
+  "version": "0.1.0",
+  "notes": "Auto-generated from ClinVar VariationID=102628, ReviewStatus='reviewed by expert panel', ClinicalSignificance='Likely pathogenic'. V1 limitation: no gnomAD AF or in-silico predictions in TSV. The agent must infer molecular consequence from HGVS notation."
+}

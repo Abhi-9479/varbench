@@ -1,0 +1,10 @@
+field	value
+gene	MYH7
+hgvs	NM_000257.4(MYH7):c.2358G>T (p.Thr786=)
+chrom	14
+pos	23425347
+ref	C
+alt	A
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

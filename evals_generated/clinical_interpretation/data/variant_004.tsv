@@ -1,0 +1,10 @@
+field	value
+gene	MLH1
+hgvs	NM_000249.4(MLH1):c.2099_2102del (p.Gln700fs)
+chrom	3
+pos	37049012
+ref	CAGCA
+alt	C
+variant_type	Deletion
+last_evaluated_year	2013
+annotation_source	NCBI ClinVar

@@ -1,0 +1,10 @@
+field	value
+gene	RUNX1
+hgvs	NM_001754.5(RUNX1):c.*2886T>C
+chrom	21
+pos	34789249
+ref	A
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2020
+annotation_source	NCBI ClinVar

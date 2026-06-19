@@ -1,0 +1,10 @@
+field	value
+gene	RPE65
+hgvs	NM_000329.3(RPE65):c.399T>C (p.Leu133=)
+chrom	1
+pos	68444627
+ref	A
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2024
+annotation_source	NCBI ClinVar

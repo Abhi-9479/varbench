@@ -1,0 +1,32 @@
+{
+  "id": "clinical_interpretation_001_brca1_known_pathogenic",
+  "category": "clinical_interpretation",
+  "subcategory": "acmg_classification",
+  "title": "Classify a BRCA1 frameshift variant",
+  "description": "Given a single-row TSV with annotation fields for a BRCA1 variant, assign one of the five ACMG/AMP classifications. The variant is a frameshift (LOF) with a 3-star ClinVar review status, allele frequency of 0 in gnomAD, and functional evidence of abrogated repair. The expected answer is 'Pathogenic'.",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It contains one row describing a single genetic variant with these fields: gene, hgvs_c, hgvs_p, consequence, clinvar_review_status, clinvar_classification, gnomad_af, functional_studies, notes. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification from this set: 'Pathogenic', 'Likely_pathogenic', 'Uncertain_significance', 'Likely_benign', 'Benign'. Write your answer as JSON to eval_answer.json with the schema: {\"classification\": \"<one of the five labels>\"}. Use the underscore form 'Likely_pathogenic' (not 'Likely pathogenic').",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant.tsv",
+      "description": "Single-row variant annotation TSV"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Pathogenic",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "easy",
+  "tags": ["acmg", "clinvar", "brca1", "lof"],
+  "version": "0.1.0",
+  "notes": "BRCA1 c.68_69del (p.Glu23ValfsTer17): expert-panel reviewed pathogenic in ClinVar (PP5/PVS1+PM2+PS3). The TSV gives the model all four key signals so the classification should be unambiguous."
+}

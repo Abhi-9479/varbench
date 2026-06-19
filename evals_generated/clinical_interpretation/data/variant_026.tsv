@@ -1,0 +1,10 @@
+field	value
+gene	GAA
+hgvs	NM_000152.5(GAA):c.545C>G (p.Thr182Arg)
+chrom	17
+pos	80105131
+ref	C
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2023
+annotation_source	NCBI ClinVar

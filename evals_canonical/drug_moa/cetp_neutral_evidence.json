@@ -1,0 +1,26 @@
+{
+  "id": "drug_moa_003_cetp_neutral_evidence",
+  "category": "drug_moa",
+  "subcategory": "lof_to_moa_neutral_framing",
+  "title": "CETP under neutral framing - same evidence, no editorial",
+  "description": "Same underlying CETP story as drug_moa_002, but the document strips the editorial sentence that telegraphed the answer. Numeric estimates are given without a pooled interpretation. The correct answer remains 'unclear' - the genetics estimates straddle the null and trials are mixed - but the answer is no longer handed to the model.",
+  "task_prompt": "Read the file cetp_evidence_neutral.txt in your working directory. Based on the population-genetics findings and trial data described, choose exactly one MoA strategy. Write your answer as JSON to eval_answer.json with this exact schema: {\"moa\": \"<value>\"}, where <value> must be the literal string \"agonist\", \"inhibitor\", or \"unclear\" - written in full, lowercase, no other words and no abbreviations. Allowed values: \"agonist\", \"inhibitor\", \"unclear\".",
+  "inputs": [
+    {
+      "path": "cetp_evidence_neutral.txt",
+      "source": "data/cetp_evidence_neutral.txt",
+      "description": "CETP evidence brief without editorial conclusion"
+    }
+  ],
+  "answer_key": "moa",
+  "expected_answer": "unclear",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": ["agonist", "inhibitor", "unclear"]
+  },
+  "difficulty": "hard",
+  "tags": ["drug_moa", "cetp", "lof", "discriminator", "no_editorial"],
+  "version": "0.1.0",
+  "notes": "Paired with drug_moa_002 (which telegraphed unclear). If Claude answers unclear on both, the reasoning is robust to editorial framing. If Claude answers unclear on 002 but inhibitor on this, the model was relying on the editorial sentence and pattern-matches LOF -> inhibitor when not told otherwise. Either result is informative."
+}

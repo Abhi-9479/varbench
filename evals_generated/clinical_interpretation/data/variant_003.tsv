@@ -1,0 +1,10 @@
+field	value
+gene	MLH1
+hgvs	NM_000249.4(MLH1):c.1171C>T (p.Gln391Ter)
+chrom	3
+pos	37025769
+ref	C
+alt	T
+variant_type	single nucleotide variant
+last_evaluated_year	2013
+annotation_source	NCBI ClinVar

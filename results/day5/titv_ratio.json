@@ -1,0 +1,20 @@
+{
+  "eval_id": "vcf_qc_002_titv_ratio",
+  "category": "vcf_qc",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "|1.5 - 1.5| = 0; abs_tol=0.01, rel_tol=0.005 -> pass",
+  "expected": 1.5,
+  "actual": 1.5,
+  "elapsed_sec": 15.097,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/vcf_qc_002_titv_ratio",
+  "error": null,
+  "agent_meta": {
+    "iterations": 5,
+    "submitted": true,
+    "input_tokens": 10310,
+    "output_tokens": 801,
+    "model": "claude-sonnet-4-5"
+  }
+}

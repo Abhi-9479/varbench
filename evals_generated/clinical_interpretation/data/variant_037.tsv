@@ -1,0 +1,10 @@
+field	value
+gene	MSH2
+hgvs	NM_000251.3(MSH2):c.2579C>T (p.Ser860Leu)
+chrom	2
+pos	47480816
+ref	C
+alt	T
+variant_type	single nucleotide variant
+last_evaluated_year	2013
+annotation_source	NCBI ClinVar

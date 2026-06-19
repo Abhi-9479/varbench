@@ -1,0 +1,35 @@
+{
+  "id": "drug_moa_001_pcsk9_lof_supports_inhibitor",
+  "category": "drug_moa",
+  "subcategory": "lof_to_moa",
+  "title": "PCSK9 LOF carriers \u2192 drug MoA inference",
+  "description": "Given a brief evidence sheet on PCSK9 loss-of-function carriers (lower LDL-C, lower CHD risk, no adverse phenotype), infer which mechanism of action a PCSK9-targeted drug should adopt. The expected answer is 'inhibitor': mimicking the protective LOF state with a drug means decreasing PCSK9 activity. This is the canonical genetics-to-MoA inference that motivated alirocumab and evolocumab; the file deliberately does NOT name those drugs.",
+  "task_prompt": "Read the file genetic_evidence.txt in your working directory. Based on the population-genetics findings described, choose exactly one of the three MoA strategies. Write your answer as JSON to eval_answer.json with this exact schema: {\"moa\": \"<value>\"}, where <value> must be the literal string \"agonist\", \"inhibitor\", or \"unclear\" \u2014 written in full, lowercase, no other words and no abbreviations. Allowed values: \"agonist\", \"inhibitor\", \"unclear\".",
+  "inputs": [
+    {
+      "path": "genetic_evidence.txt",
+      "source": "data/genetic_evidence.txt",
+      "description": "Brief on PCSK9 LOF human-genetics findings"
+    }
+  ],
+  "answer_key": "moa",
+  "expected_answer": "inhibitor",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "agonist",
+      "inhibitor",
+      "unclear"
+    ]
+  },
+  "difficulty": "easy",
+  "tags": [
+    "drug_moa",
+    "pcsk9",
+    "human_genetics",
+    "lof"
+  ],
+  "version": "0.1.0",
+  "notes": "The reasoning chain: LOF carriers have lower LDL-C and lower CHD risk with no adverse phenotype -> reducing PCSK9 activity is therapeutically desirable -> the drug should reduce PCSK9 activity -> inhibitor. The evidence file deliberately names variants but not drugs, so an answer driven by prior knowledge of alirocumab/evolocumab cannot bypass the inference."
+}

@@ -1,0 +1,20 @@
+{
+  "eval_id": "clinical_interpretation_001_brca1_known_pathogenic",
+  "category": "clinical_interpretation",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Pathogenic",
+  "actual": "Pathogenic",
+  "elapsed_sec": 21.268,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/clinical_interpretation_001_brca1_known_pathogenic",
+  "error": null,
+  "agent_meta": {
+    "iterations": 7,
+    "submitted": false,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

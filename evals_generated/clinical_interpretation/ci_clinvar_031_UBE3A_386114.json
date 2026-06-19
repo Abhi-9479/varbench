@@ -1,0 +1,38 @@
+{
+  "id": "ci_clinvar_031_UBE3A_386114",
+  "category": "clinical_interpretation",
+  "subcategory": "clinvar_high_confidence_classification",
+  "title": "Classify UBE3A variant (ClinVar VarID 386114)",
+  "description": "Classify a single variant in UBE3A using its HGVS notation, coordinates, and variant type. Ground truth is ClinVar's reviewed by expert panel consensus classification (Likely benign).",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It is a two-column 'field\\tvalue' table describing a single human genetic variant: gene, HGVS notation, genomic coordinates, ClinVar variant type, and provenance. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant_031.tsv",
+      "description": "Annotations for UBE3A NM_130839.5(UBE3A):c.2281-20A>G"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Likely_benign",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "medium",
+  "tags": [
+    "clinvar",
+    "acmg",
+    "auto_generated",
+    "ube3a",
+    "likely_benign"
+  ],
+  "version": "0.1.0",
+  "notes": "Auto-generated from ClinVar VariationID=386114, ReviewStatus='reviewed by expert panel', ClinicalSignificance='Likely benign'. V1 limitation: no gnomAD AF or in-silico predictions in TSV. The agent must infer molecular consequence from HGVS notation."
+}

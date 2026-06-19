@@ -1,0 +1,2 @@
+gene	hgvs_c	hgvs_p	consequence	clinvar_review_status	clinvar_classification	gnomad_af_overall	gnomad_af_max_pop	in_silico_revel	in_silico_cadd	in_silico_sift	in_silico_polyphen	functional_studies	segregation_data	notes
+BRCA2	c.7522G>A	p.Gly2508Ser	missense_variant	criteria_provided_conflicting_interpretations	"Conflicting (VUS / Likely_benign)"	0.00012	0.00021	0.45	21.3	tolerated	possibly_damaging	none_available	none_available	"Conflicting in silico predictions; rare but not absent in gnomAD; no functional or segregation data; ClinVar entries themselves conflict."

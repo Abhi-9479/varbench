@@ -1,0 +1,10 @@
+field	value
+gene	HNF4A
+hgvs	NM_175914.5(HNF4A):c.341G>A (p.Arg114Gln)
+chrom	20
+pos	44413715
+ref	G
+alt	A
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

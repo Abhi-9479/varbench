@@ -1,0 +1,10 @@
+field	value
+gene	MLH1
+hgvs	NM_000249.4(MLH1):c.1026dup (p.Tyr343fs)
+chrom	3
+pos	37020450
+ref	T
+alt	TG
+variant_type	Duplication
+last_evaluated_year	2013
+annotation_source	NCBI ClinVar

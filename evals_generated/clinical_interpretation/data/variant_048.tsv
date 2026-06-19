@@ -1,0 +1,10 @@
+field	value
+gene	SLC9A6
+hgvs	NM_001379110.1(SLC9A6):c.1582-3C>T
+chrom	X
+pos	136033411
+ref	C
+alt	T
+variant_type	single nucleotide variant
+last_evaluated_year	2021
+annotation_source	NCBI ClinVar

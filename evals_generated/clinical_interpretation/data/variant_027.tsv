@@ -1,0 +1,10 @@
+field	value
+gene	LDLR
+hgvs	NM_000527.5(LDLR):c.1765G>C (p.Asp589His)
+chrom	19
+pos	11116918
+ref	G
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2022
+annotation_source	NCBI ClinVar

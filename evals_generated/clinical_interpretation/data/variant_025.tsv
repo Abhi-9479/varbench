@@ -1,0 +1,10 @@
+field	value
+gene	SERPINC1
+hgvs	NM_000488.4(SERPINC1):c.17T>C (p.Ile6Thr)
+chrom	1
+pos	173917243
+ref	A
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2024
+annotation_source	NCBI ClinVar

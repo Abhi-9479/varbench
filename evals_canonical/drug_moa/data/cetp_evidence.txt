@@ -1,0 +1,35 @@
+Gene: CETP (cholesteryl ester transfer protein)
+
+Function summary:
+- CETP transfers cholesteryl esters from HDL particles to LDL/VLDL particles
+  in exchange for triglycerides.
+- Loss of CETP activity therefore raises HDL cholesterol (HDL-C) and modestly
+  lowers LDL-C.
+
+Population-genetic findings:
+- Carriers of common CETP loss-of-function variants (e.g. p.Asp442Gly in East
+  Asian populations, R451Q and others) have approximately 10-20% higher HDL-C
+  and approximately 5-10% lower LDL-C than non-carriers.
+- The association between CETP-variant carrier status and cardiovascular disease
+  risk is mixed in the human-genetics literature:
+    * Some meta-analyses of common CETP variants suggest a modest reduction in
+      coronary heart disease (CHD) risk (~5%).
+    * Some Mendelian randomization analyses fail to show a clear benefit, and
+      others suggest possible adverse effects in certain populations.
+    * Homozygous CETP-deficient individuals in Japan have very high HDL-C but
+      do not show uniformly reduced CHD; some pedigrees report increased CHD.
+- Pharmacological trials of CETP inhibitors have a notable record:
+    * torcetrapib (Pfizer): increased mortality in ILLUMINATE; development halted.
+    * dalcetrapib (Roche): no overall CHD benefit in dal-OUTCOMES; halted.
+    * evacetrapib (Lilly): no overall CHD benefit in ACCELERATE; halted.
+    * anacetrapib (Merck): modest CHD benefit in REVEAL; not advanced commercially.
+- The dominant interpretation in the literature is that raising HDL-C via CETP
+  inhibition is NOT a reliable proxy for cardiovascular benefit, despite the
+  surface-level LOF -> higher-HDL -> presumed-protective chain.
+
+Question for the analyst:
+A pharmaceutical company is reviewing CETP as a target. Choose exactly one of:
+  - 'agonist'   : a drug that increases CETP activity
+  - 'inhibitor' : a drug that decreases CETP activity
+  - 'unclear'   : the human-genetics evidence does not cleanly favor either direction
+Which choice does the human-genetics evidence above support?

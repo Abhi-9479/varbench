@@ -1,0 +1,33 @@
+{
+  "id": "variant_filtering_004_missense_combined_annotations",
+  "category": "variant_filtering",
+  "subcategory": "consequence_filter_combined",
+  "title": "Identify all missense variants, including combined VEP annotations",
+  "description": "A 20-row VEP-style TSV where some rows have combined consequence annotations like 'missense_variant&splice_region_variant'. The task is to identify every variant that IS a missense (whether on its own or in combination with another annotation). Tests whether the agent understands the '&'-separated VEP consequence convention.",
+  "task_prompt": "You are given a TSV file at vep_combined_annotations.tsv in your working directory. It has columns: variant_id, gene, hgvs_c, consequence, impact. The consequence column may contain a single SO term (e.g. 'missense_variant') OR multiple SO terms joined with '&' (e.g. 'missense_variant&splice_region_variant') - the latter means both consequences apply to that variant. Identify every variant whose consequence list INCLUDES 'missense_variant' (either alone or as part of an '&'-separated list). Write your answer as JSON to eval_answer.json with this exact schema: {\"missense_variants\": [\"<variant_id>\", ...]}. Use the variant_id strings verbatim. Order does not matter.",
+  "inputs": [
+    {
+      "path": "vep_combined_annotations.tsv",
+      "source": "data/vep_combined_annotations.tsv",
+      "description": "20 annotated variants, two with combined VEP annotations"
+    }
+  ],
+  "answer_key": "missense_variants",
+  "expected_answer": [
+    "chr1:1000:A:T",
+    "chr2:1500:A:G",
+    "chr2:3500:C:G",
+    "chr3:3000:C:T",
+    "chr4:2000:C:T",
+    "chr5:1000:G:C",
+    "chr6:1000:A:T",
+    "chr7:2000:T:C"
+  ],
+  "grader": {
+    "type": "set_match"
+  },
+  "difficulty": "medium",
+  "tags": ["consequence", "vep", "filter", "combined_annotation"],
+  "version": "0.1.0",
+  "notes": "8 missense variants total: 6 'missense_variant' alone + 2 'missense_variant&splice_region_variant' combined. The prompt explicitly explains the '&' convention so the task is fair; the eval tests whether the model implements the convention correctly. A strict-equality filter (consequence == 'missense_variant') yields 6 - missing the two combined rows - Jaccard 6/8 = 0.75. Strict set_match (no Jaccard threshold) so missing both gives FAIL outright."
+}

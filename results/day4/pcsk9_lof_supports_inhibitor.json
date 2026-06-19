@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_001_pcsk9_lof_supports_inhibitor",
+  "category": "drug_moa",
+  "agent": "claude",
+  "passed": false,
+  "score": 0.0,
+  "reason": "actual='inhibit' is not in allowed_labels=['agonist', 'inhibitor', 'unclear']",
+  "expected": "inhibitor",
+  "actual": "inhibit",
+  "elapsed_sec": 9.516,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_001_pcsk9_lof_supports_inhibitor",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": 2722,
+    "output_tokens": 364,
+    "model": "claude-sonnet-4-5"
+  }
+}

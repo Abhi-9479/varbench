@@ -1,0 +1,20 @@
+{
+  "eval_id": "variant_filtering_001_pass_and_dp30",
+  "category": "variant_filtering",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "exact match",
+  "expected": 5,
+  "actual": 5,
+  "elapsed_sec": 28.615,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_filtering_001_pass_and_dp30",
+  "error": null,
+  "agent_meta": {
+    "iterations": 7,
+    "submitted": true,
+    "input_tokens": 18287,
+    "output_tokens": 1284,
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,10 @@
+field	value
+gene	BRCA1
+hgvs	NM_007294.4(BRCA1):c.4987-68A>G
+chrom	17
+pos	43067763
+ref	T
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2015
+annotation_source	NCBI ClinVar

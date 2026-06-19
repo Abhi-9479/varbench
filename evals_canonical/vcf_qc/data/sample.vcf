@@ -1,0 +1,19 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=LowQual,Description="Variant has low quality">
+##FILTER=<ID=lowDP,Description="Depth below threshold">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
+chr1	1000	.	A	T	50	PASS	DP=30	GT:DP:GQ	0/1:30:40
+chr1	2000	.	G	C	25	LowQual	DP=8	GT:DP:GQ	0/1:8:15
+chr1	3000	.	T	A	60	PASS	DP=45	GT:DP:GQ	1/1:45:99
+chr1	4000	.	C	G	18	lowDP	DP=5	GT:DP:GQ	0/1:5:20
+chr2	1500	.	A	G	80	PASS	DP=60	GT:DP:GQ	0/1:60:80
+chr2	2500	.	G	T	40	PASS	DP=22	GT:DP:GQ	0/1:22:35
+chr2	3500	.	T	C	15	LowQual	DP=10	GT:DP:GQ	1/1:10:18
+chr3	5000	.	C	A	70	PASS	DP=50	GT:DP:GQ	1/1:50:70
+chr3	6000	.	A	G	22	LowQual	DP=15	GT:DP:GQ	0/1:15:22
+chr3	7000	.	G	C	90	PASS	DP=80	GT:DP:GQ	1/1:80:99

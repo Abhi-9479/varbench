@@ -1,0 +1,13 @@
+{
+  "eval_id": "ci_clinvar_017_PAH_102628",
+  "category": "clinical_interpretation",
+  "agent": "echo",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Likely_pathogenic",
+  "actual": "Likely_pathogenic",
+  "elapsed_sec": 0.001,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_017_PAH_102628",
+  "error": null
+}

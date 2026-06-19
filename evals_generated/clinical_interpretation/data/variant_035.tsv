@@ -1,0 +1,10 @@
+field	value
+gene	KRAS
+hgvs	NM_004985.5(KRAS):c.24A>G (p.Val8=)
+chrom	12
+pos	25245361
+ref	T
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2017
+annotation_source	NCBI ClinVar

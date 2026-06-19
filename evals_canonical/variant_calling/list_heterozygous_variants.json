@@ -1,0 +1,31 @@
+{
+  "id": "variant_calling_001_list_heterozygous_variants",
+  "category": "variant_calling",
+  "subcategory": "genotype_filtering",
+  "title": "List all heterozygous variants",
+  "description": "Identify every variant in the VCF whose sample genotype is heterozygous (0/1 or 1/0). Return them as a set of CHROM:POS:REF:ALT strings. Tests genotype-field parsing and structured set output.",
+  "task_prompt": "You are given a VCF file at sample.vcf in your working directory. For each variant record, the sample column (SAMPLE1, the last column) contains the genotype as the first colon-separated subfield (the GT field per the FORMAT column). Identify every variant where the genotype is heterozygous - exactly '0/1' or '1/0'. Write your answer as JSON to eval_answer.json with the schema: {\"het_variants\": [\"<CHROM>:<POS>:<REF>:<ALT>\", ...]}. Use the literal CHROM string (e.g. 'chr1'), the POS as a string of digits, and the REF/ALT as single-letter strings. Order does not matter.",
+  "inputs": [
+    {
+      "path": "sample.vcf",
+      "source": "../vcf_qc/data/sample.vcf",
+      "description": "Shared 10-variant synthetic VCF"
+    }
+  ],
+  "answer_key": "het_variants",
+  "expected_answer": [
+    "chr1:1000:A:T",
+    "chr1:2000:G:C",
+    "chr1:4000:C:G",
+    "chr2:1500:A:G",
+    "chr2:2500:G:T",
+    "chr3:6000:A:G"
+  ],
+  "grader": {
+    "type": "set_match"
+  },
+  "difficulty": "easy",
+  "tags": ["vcf", "genotype", "calling", "set_output"],
+  "version": "0.1.0",
+  "notes": "6 of 10 variants are 0/1 (het); the other 4 are 1/1 (hom alt). No 0/0 or 1/0 cases in this fixture."
+}

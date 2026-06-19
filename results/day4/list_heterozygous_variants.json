@@ -1,0 +1,34 @@
+{
+  "eval_id": "variant_calling_001_list_heterozygous_variants",
+  "category": "variant_calling",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "sets match exactly",
+  "expected": [
+    "chr1:1000:A:T",
+    "chr1:2000:G:C",
+    "chr1:4000:C:G",
+    "chr2:1500:A:G",
+    "chr2:2500:G:T",
+    "chr3:6000:A:G"
+  ],
+  "actual": [
+    "chr1:1000:A:T",
+    "chr1:2000:G:C",
+    "chr1:4000:C:G",
+    "chr2:1500:A:G",
+    "chr2:2500:G:T",
+    "chr3:6000:A:G"
+  ],
+  "elapsed_sec": 20.546,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_calling_001_list_heterozygous_variants",
+  "error": null,
+  "agent_meta": {
+    "iterations": 6,
+    "submitted": true,
+    "input_tokens": 13266,
+    "output_tokens": 841,
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "population_genetics_001_pcsk9_r46l_ba1_check",
+  "category": "population_genetics",
+  "subcategory": "acmg_ba1_threshold",
+  "title": "Does PCSK9 p.R46L meet ACMG BA1?",
+  "description": "Apply the ACMG/AMP BA1 rule: allele frequency in a population database greater than 5% is stand-alone evidence of benign impact. Given a TSV of gnomAD allele frequencies for PCSK9 p.R46L across populations, answer yes or no. Tests numeric-threshold reasoning over a small structured input.",
+  "task_prompt": "You are given a TSV file at variant_af.tsv in your working directory. It contains gnomAD allele-frequency fields for the PCSK9 p.Arg46Leu (R46L, rs11591147) missense variant across global populations. The ACMG/AMP BA1 criterion states: allele frequency > 5% (0.05) in a continental population in gnomAD is stand-alone evidence that the variant is benign. Question: does this variant meet BA1? Write your answer as JSON to eval_answer.json with the schema: {\"meets_ba1\": \"yes\"} or {\"meets_ba1\": \"no\"}. Use lowercase exactly.",
+  "inputs": [
+    {
+      "path": "variant_af.tsv",
+      "source": "data/variant_af.tsv",
+      "description": "PCSK9 R46L allele frequencies per gnomAD population"
+    }
+  ],
+  "answer_key": "meets_ba1",
+  "expected_answer": "no",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": ["yes", "no"]
+  },
+  "difficulty": "medium",
+  "tags": ["acmg", "ba1", "gnomad", "pcsk9", "thresholds"],
+  "version": "0.1.0",
+  "notes": "Max population AF is NFE at 0.0184 (1.84%), below the 5% BA1 threshold. Note: PCSK9 R46L is a real LOF-favoring variant studied for its protective cardiovascular effect; it is NOT a 'pathogenic' variant. BA1 in the ACMG framework is about ruling out *clinical* pathogenicity from frequency, which is a different question - the variant is too rare for BA1 but is functionally a protective LOF."
+}

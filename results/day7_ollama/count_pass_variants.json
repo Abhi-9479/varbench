@@ -1,0 +1,20 @@
+{
+  "eval_id": "vcf_qc_001_count_pass_variants",
+  "category": "vcf_qc",
+  "agent": "ollama",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 6, got 9",
+  "expected": 6,
+  "actual": 9,
+  "elapsed_sec": 3.819,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/vcf_qc_001_count_pass_variants",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

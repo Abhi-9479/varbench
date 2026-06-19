@@ -1,0 +1,10 @@
+field	value
+gene	F8
+hgvs	NM_000132.4(F8):c.6623A>G (p.Gln2208Arg)
+chrom	X
+pos	154861818
+ref	T
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

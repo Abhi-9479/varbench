@@ -1,0 +1,38 @@
+{
+  "id": "ci_clinvar_023_MSH2_90685",
+  "category": "clinical_interpretation",
+  "subcategory": "clinvar_high_confidence_classification",
+  "title": "Classify MSH2 variant (ClinVar VarID 90685)",
+  "description": "Classify a single variant in MSH2 using its HGVS notation, coordinates, and variant type. Ground truth is ClinVar's reviewed by expert panel consensus classification (Uncertain significance).",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It is a two-column 'field\\tvalue' table describing a single human genetic variant: gene, HGVS notation, genomic coordinates, ClinVar variant type, and provenance. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant_023.tsv",
+      "description": "Annotations for MSH2 NM_000251.3(MSH2):c.1510G>C (p.Gly504Arg)"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Uncertain_significance",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "medium",
+  "tags": [
+    "clinvar",
+    "acmg",
+    "auto_generated",
+    "msh2",
+    "uncertain_significance"
+  ],
+  "version": "0.1.0",
+  "notes": "Auto-generated from ClinVar VariationID=90685, ReviewStatus='reviewed by expert panel', ClinicalSignificance='Uncertain significance'. V1 limitation: no gnomAD AF or in-silico predictions in TSV. The agent must infer molecular consequence from HGVS notation."
+}

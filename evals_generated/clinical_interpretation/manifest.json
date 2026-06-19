@@ -1,0 +1,16 @@
+{
+  "n_generated": 50,
+  "n_requested": 50,
+  "by_class": {
+    "Pathogenic": 10,
+    "Likely pathogenic": 10,
+    "Uncertain significance": 10,
+    "Likely benign": 10,
+    "Benign": 10
+  },
+  "by_review_status": {
+    "reviewed by expert panel": 50
+  },
+  "clinvar_file": "data/clinvar/variant_summary.txt.gz",
+  "seed": 42
+}

@@ -1,0 +1,10 @@
+field	value
+gene	RAF1
+hgvs	NM_002880.4(RAF1):c.1082G>C (p.Gly361Ala)
+chrom	3
+pos	12599717
+ref	C
+alt	G
+variant_type	single nucleotide variant
+last_evaluated_year	2017
+annotation_source	NCBI ClinVar

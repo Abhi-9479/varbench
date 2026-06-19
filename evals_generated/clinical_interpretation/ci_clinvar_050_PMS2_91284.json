@@ -1,0 +1,38 @@
+{
+  "id": "ci_clinvar_050_PMS2_91284",
+  "category": "clinical_interpretation",
+  "subcategory": "clinvar_high_confidence_classification",
+  "title": "Classify PMS2 variant (ClinVar VarID 91284)",
+  "description": "Classify a single variant in PMS2 using its HGVS notation, coordinates, and variant type. Ground truth is ClinVar's reviewed by expert panel consensus classification (Benign).",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It is a two-column 'field\\tvalue' table describing a single human genetic variant: gene, HGVS notation, genomic coordinates, ClinVar variant type, and provenance. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant_050.tsv",
+      "description": "Annotations for PMS2 NM_000535.5(PMS2):c.-323G>T"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Benign",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "medium",
+  "tags": [
+    "clinvar",
+    "acmg",
+    "auto_generated",
+    "pms2",
+    "benign"
+  ],
+  "version": "0.1.0",
+  "notes": "Auto-generated from ClinVar VariationID=91284, ReviewStatus='reviewed by expert panel', ClinicalSignificance='Benign'. V1 limitation: no gnomAD AF or in-silico predictions in TSV. The agent must infer molecular consequence from HGVS notation."
+}

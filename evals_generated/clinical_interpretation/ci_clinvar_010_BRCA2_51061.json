@@ -1,0 +1,38 @@
+{
+  "id": "ci_clinvar_010_BRCA2_51061",
+  "category": "clinical_interpretation",
+  "subcategory": "clinvar_high_confidence_classification",
+  "title": "Classify BRCA2 variant (ClinVar VarID 51061)",
+  "description": "Classify a single variant in BRCA2 using its HGVS notation, coordinates, and variant type. Ground truth is ClinVar's reviewed by expert panel consensus classification (Pathogenic).",
+  "task_prompt": "You are given a TSV file at variant.tsv in your working directory. It is a two-column 'field\\tvalue' table describing a single human genetic variant: gene, HGVS notation, genomic coordinates, ClinVar variant type, and provenance. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "variant.tsv",
+      "source": "data/variant_010.tsv",
+      "description": "Annotations for BRCA2 NM_000059.4(BRCA2):c.1082del (p.Asn361fs)"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Pathogenic",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "medium",
+  "tags": [
+    "clinvar",
+    "acmg",
+    "auto_generated",
+    "brca2",
+    "pathogenic"
+  ],
+  "version": "0.1.0",
+  "notes": "Auto-generated from ClinVar VariationID=51061, ReviewStatus='reviewed by expert panel', ClinicalSignificance='Pathogenic'. V1 limitation: no gnomAD AF or in-silico predictions in TSV. The agent must infer molecular consequence from HGVS notation."
+}

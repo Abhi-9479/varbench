@@ -1,0 +1,10 @@
+field	value
+gene	RYR1
+hgvs	NM_000540.3(RYR1):c.11086G>C (p.Asp3696His)
+chrom	19
+pos	38529002
+ref	G
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

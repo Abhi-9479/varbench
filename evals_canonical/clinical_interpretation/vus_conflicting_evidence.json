@@ -1,0 +1,32 @@
+{
+  "id": "clinical_interpretation_002_vus_conflicting_evidence",
+  "category": "clinical_interpretation",
+  "subcategory": "acmg_classification_vus",
+  "title": "Classify a BRCA2 missense with conflicting evidence",
+  "description": "A BRCA2 missense variant with rare-but-not-absent population frequency, conflicting in silico predictions (REVEL 0.45 borderline; SIFT tolerated, PolyPhen possibly damaging), no functional or segregation data, and conflicting ClinVar entries. The correct ACMG classification is Uncertain_significance.",
+  "task_prompt": "You are given a TSV file at vus_variant.tsv in your working directory. It has a single variant row with annotation fields including ClinVar status, gnomAD frequencies, in-silico predictions (REVEL, CADD, SIFT, PolyPhen), and any available functional and segregation data. Based on these fields and standard ACMG/AMP interpretation principles, assign the variant exactly one classification. Write your answer as JSON to eval_answer.json with this exact schema: {\"classification\": \"<value>\"}, where <value> must be the literal string \"Pathogenic\", \"Likely_pathogenic\", \"Uncertain_significance\", \"Likely_benign\", or \"Benign\" - written exactly as shown including the underscore.",
+  "inputs": [
+    {
+      "path": "vus_variant.tsv",
+      "source": "data/vus_variant.tsv",
+      "description": "BRCA2 c.7522G>A with deliberately conflicting evidence"
+    }
+  ],
+  "answer_key": "classification",
+  "expected_answer": "Uncertain_significance",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": [
+      "Pathogenic",
+      "Likely_pathogenic",
+      "Uncertain_significance",
+      "Likely_benign",
+      "Benign"
+    ]
+  },
+  "difficulty": "hard",
+  "tags": ["acmg", "vus", "brca2", "conflicting"],
+  "version": "0.1.0",
+  "notes": "Discriminator eval. A model that defaults to Pathogenic on any 'rare missense in disease gene' fails. A model that defaults to Likely_benign on 'rare' fails. A model that correctly notes (a) conflicting in silico, (b) no functional/segregation data, (c) conflicting ClinVar entries should converge on Uncertain_significance. REVEL 0.45 is in the gray zone (>0.5 typically supports PP3, <0.25 supports BP4; 0.45 is neither). The variant ID and notes are fabricated to avoid contamination from the real ClinVar entry, if any."
+}

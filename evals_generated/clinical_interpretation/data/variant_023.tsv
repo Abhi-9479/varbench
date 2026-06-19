@@ -1,0 +1,10 @@
+field	value
+gene	MSH2
+hgvs	NM_000251.3(MSH2):c.1510G>C (p.Gly504Arg)
+chrom	2
+pos	47463154
+ref	G
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2018
+annotation_source	NCBI ClinVar

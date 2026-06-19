@@ -1,0 +1,20 @@
+{
+  "eval_id": "variant_filtering_003_multi_condition",
+  "category": "variant_filtering",
+  "agent": "ollama",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 2, got 15",
+  "expected": 2,
+  "actual": 15,
+  "elapsed_sec": 6.381,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_filtering_003_multi_condition",
+  "error": null,
+  "agent_meta": {
+    "iterations": 1,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

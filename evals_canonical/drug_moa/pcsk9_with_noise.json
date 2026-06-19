@@ -1,0 +1,26 @@
+{
+  "id": "drug_moa_004_pcsk9_with_noise",
+  "category": "drug_moa",
+  "subcategory": "lof_to_moa_with_noise",
+  "title": "PCSK9 with hedging and counterpoint noise - is the answer still inhibitor?",
+  "description": "PCSK9 evidence is presented with hedging language, irrelevant caveats, and a 'CETP cautionary tale' name-drop intended to push toward 'unclear'. A model that weighs evidence properly sees: large effect sizes on LDL-C, broadly consistent CHD reduction, two approved drugs with positive trials, no adverse phenotype in homozygotes. The signal massively dominates the noise. Correct answer remains 'inhibitor'.",
+  "task_prompt": "Read the file pcsk9_with_noise.txt in your working directory. Based on the population-genetics findings and trial data described, choose exactly one MoA strategy. Write your answer as JSON to eval_answer.json with this exact schema: {\"moa\": \"<value>\"}, where <value> must be the literal string \"agonist\", \"inhibitor\", or \"unclear\" - written in full, lowercase, no other words and no abbreviations. Allowed values: \"agonist\", \"inhibitor\", \"unclear\".",
+  "inputs": [
+    {
+      "path": "pcsk9_with_noise.txt",
+      "source": "data/pcsk9_with_noise.txt",
+      "description": "PCSK9 evidence with deliberate noise and hedging"
+    }
+  ],
+  "answer_key": "moa",
+  "expected_answer": "inhibitor",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": ["agonist", "inhibitor", "unclear"]
+  },
+  "difficulty": "hard",
+  "tags": ["drug_moa", "pcsk9", "lof", "discriminator", "noise_robustness"],
+  "version": "0.1.0",
+  "notes": "Paired with drug_moa_001 (clean PCSK9) and drug_moa_002/003 (CETP). Tests whether the model can recognize a strong genetic signal under noise pressure. Key cues that should drive 'inhibitor': (1) large LDL-C effects in two independent ancestries, (2) consistent direction of CHD effect with wide but unidirectional CIs, (3) two clinically approved drugs with positive Phase 3 outcomes, (4) homozygote phenotype consistent with safety. The 'CETP cautionary tale' line is a red herring testing whether the model can compartmentalize."
+}

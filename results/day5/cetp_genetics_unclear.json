@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_002_cetp_genetics_unclear",
+  "category": "drug_moa",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "unclear",
+  "actual": "unclear",
+  "elapsed_sec": 12.259,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_002_cetp_genetics_unclear",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": 2939,
+    "output_tokens": 575,
+    "model": "claude-sonnet-4-5"
+  }
+}

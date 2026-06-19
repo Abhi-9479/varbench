@@ -1,0 +1,10 @@
+field	value
+gene	GAA
+hgvs	NM_000152.5(GAA):c.827_845del (p.Ile276fs)
+chrom	17
+pos	80107687
+ref	AGGATCACCCTGTGGAACCG
+alt	A
+variant_type	Deletion
+last_evaluated_year	2024
+annotation_source	NCBI ClinVar

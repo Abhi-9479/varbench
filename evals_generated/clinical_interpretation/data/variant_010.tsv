@@ -1,0 +1,10 @@
+field	value
+gene	BRCA2
+hgvs	NM_000059.4(BRCA2):c.1082del (p.Asn361fs)
+chrom	13
+pos	32332557
+ref	CA
+alt	C
+variant_type	Deletion
+last_evaluated_year	2017
+annotation_source	NCBI ClinVar

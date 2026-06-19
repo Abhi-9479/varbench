@@ -1,0 +1,10 @@
+field	value
+gene	BRCA1
+hgvs	NM_007294.4(BRCA1):c.3155del (p.Asn1052fs)
+chrom	17
+pos	43092375
+ref	AT
+alt	A
+variant_type	Deletion
+last_evaluated_year	2016
+annotation_source	NCBI ClinVar

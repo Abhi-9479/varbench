@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_002_cetp_genetics_unclear",
+  "category": "drug_moa",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "unclear",
+  "actual": "unclear",
+  "elapsed_sec": 28.364,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_002_cetp_genetics_unclear",
+  "error": null,
+  "agent_meta": {
+    "iterations": 12,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "eval_id": "variant_filtering_004_missense_combined_annotations",
+  "category": "variant_filtering",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "sets match exactly",
+  "expected": [
+    "chr1:1000:A:T",
+    "chr2:1500:A:G",
+    "chr2:3500:C:G",
+    "chr3:3000:C:T",
+    "chr4:2000:C:T",
+    "chr5:1000:G:C",
+    "chr6:1000:A:T",
+    "chr7:2000:T:C"
+  ],
+  "actual": [
+    "chr1:1000:A:T",
+    "chr2:1500:A:G",
+    "chr2:3500:C:G",
+    "chr3:3000:C:T",
+    "chr4:2000:C:T",
+    "chr5:1000:G:C",
+    "chr6:1000:A:T",
+    "chr7:2000:T:C"
+  ],
+  "elapsed_sec": 20.865,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_filtering_004_missense_combined_annotations",
+  "error": null,
+  "agent_meta": {
+    "iterations": 6,
+    "submitted": true,
+    "input_tokens": 14193,
+    "output_tokens": 913,
+    "model": "claude-sonnet-4-5"
+  }
+}

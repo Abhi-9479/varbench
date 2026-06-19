@@ -1,0 +1,38 @@
+Gene: PCSK9
+
+Background:
+- PCSK9 binds the LDL receptor and promotes its lysosomal degradation;
+  higher PCSK9 activity correlates with higher LDL-C.
+- Heterozygous loss-of-function (LOF) variant carriers have lower
+  LDL-C and lower coronary heart disease risk.
+
+Specific carrier estimates from the literature:
+- African-ancestry LOF carriers (Y142X, C679X): -38% LDL-C; CHD HR
+  in the original Cohen et al. (NEJM 2006) report ~0.12 over 15 years,
+  though sample size was limited and the confidence interval is wide.
+- European p.R46L heterozygotes (rs11591147): -15 to -28% LDL-C;
+  CHD relative-risk reduction estimates across cohorts range from
+  -27% (ARIC) to -47% (Copenhagen General Population Study).
+- A small number of published homozygous LOF individuals (n<10 lifetime
+  reported worldwide) have LDL-C levels of 14-25 mg/dL with no reported
+  adverse phenotype attributable to PCSK9 deficiency.
+
+Counterpoints and caveats to consider:
+- Some animal studies have raised theoretical concerns about chronic
+  LDL-C reduction and cognitive outcomes, though these have not been
+  reproduced in human PCSK9 inhibitor trials.
+- A subset of population-genetic analyses using less-curated variant
+  sets find effect-size attenuation when adjusting for other lipid loci.
+- The clinically approved PCSK9 inhibitors (alirocumab, evolocumab)
+  showed CHD benefit in FOURIER and ODYSSEY OUTCOMES, but the absolute
+  risk reduction was modest (~1.5-2 percentage points over 2-3 years)
+  and questions remain about cost-effectiveness at population scale.
+- A 2020 review noted that "not every LOF observation in human genetics
+  translates to a successful therapeutic strategy" - citing, among
+  other examples, the CETP cautionary tale.
+
+A pharmaceutical company is reviewing PCSK9 as a target. Choose exactly
+one of:
+  - 'agonist'   : a drug that increases PCSK9 activity
+  - 'inhibitor' : a drug that decreases PCSK9 activity
+  - 'unclear'   : the human-genetics evidence does not cleanly favor either direction

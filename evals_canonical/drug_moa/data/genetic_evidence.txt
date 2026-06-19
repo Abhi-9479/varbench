@@ -1,0 +1,25 @@
+Gene: PCSK9 (proprotein convertase subtilisin/kexin type 9)
+
+Function summary:
+- PCSK9 protein binds the LDL receptor (LDLR) on hepatocytes and targets it
+  for lysosomal degradation.
+- Higher PCSK9 activity therefore reduces hepatic LDLR availability and raises
+  circulating LDL cholesterol (LDL-C).
+
+Population-genetic findings:
+- Carriers of loss-of-function (LOF) variants in PCSK9 (e.g. p.Tyr142X, p.Cys679X,
+  p.Arg46Leu) have approximately 28-50% lower plasma LDL-C than non-carriers.
+- A landmark cohort study (Cohen et al., NEJM 2006) reported that African-American
+  carriers of PCSK9 LOF variants had an approximately 88% reduction in risk of
+  coronary heart disease over 15 years of follow-up; a smaller but significant
+  reduction was observed in European-ancestry carriers of p.R46L.
+- No homozygous LOF carrier has been reported with any apparent adverse phenotype
+  beyond very low LDL-C.
+
+Question for the analyst:
+Given these human-genetics findings, a pharmaceutical company developing a drug
+targeting PCSK9 must choose between three mechanism-of-action (MoA) strategies:
+  - 'agonist'   : a drug that increases PCSK9 activity
+  - 'inhibitor' : a drug that decreases PCSK9 activity
+  - 'unclear'   : the human-genetics evidence does not favor either direction
+Which MoA does the population-genetic evidence above support?

@@ -1,0 +1,10 @@
+field	value
+gene	PIK3CD
+hgvs	NM_005026.5(PIK3CD):c.1570T>A (p.Tyr524Asn)
+chrom	1
+pos	9720790
+ref	T
+alt	A
+variant_type	single nucleotide variant
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

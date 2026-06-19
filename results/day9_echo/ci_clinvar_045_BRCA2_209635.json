@@ -1,0 +1,13 @@
+{
+  "eval_id": "ci_clinvar_045_BRCA2_209635",
+  "category": "clinical_interpretation",
+  "agent": "echo",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Benign",
+  "actual": "Benign",
+  "elapsed_sec": 0.0,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_045_BRCA2_209635",
+  "error": null
+}

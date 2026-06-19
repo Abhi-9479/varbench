@@ -1,0 +1,26 @@
+{
+  "id": "drug_moa_002_cetp_genetics_unclear",
+  "category": "drug_moa",
+  "subcategory": "lof_to_moa_negative",
+  "title": "CETP LOF -> does the genetics actually support an inhibitor?",
+  "description": "A discriminator eval. CETP LOF raises HDL-C, which naively suggests inhibition would mimic a protective phenotype - but the human-genetics evidence on CHD risk is mixed and pharmacological CETP inhibitor trials have largely failed. The honest reading of the evidence is 'unclear', not 'inhibitor'. Tests whether the model pattern-matches LOF->inhibitor or actually weighs conflicting evidence.",
+  "task_prompt": "Read the file cetp_evidence.txt in your working directory. Based on the population-genetics findings and trial history described, choose exactly one MoA strategy. Write your answer as JSON to eval_answer.json with this exact schema: {\"moa\": \"<value>\"}, where <value> must be the literal string \"agonist\", \"inhibitor\", or \"unclear\" - written in full, lowercase, no other words and no abbreviations. Allowed values: \"agonist\", \"inhibitor\", \"unclear\".",
+  "inputs": [
+    {
+      "path": "cetp_evidence.txt",
+      "source": "data/cetp_evidence.txt",
+      "description": "Brief on CETP human-genetics findings and CETP-inhibitor trial history"
+    }
+  ],
+  "answer_key": "moa",
+  "expected_answer": "unclear",
+  "grader": {
+    "type": "categorical",
+    "case_sensitive": true,
+    "allowed_labels": ["agonist", "inhibitor", "unclear"]
+  },
+  "difficulty": "hard",
+  "tags": ["drug_moa", "cetp", "lof", "discriminator", "negative_control"],
+  "version": "0.1.0",
+  "notes": "Discriminator vs drug_moa_001. PCSK9 (eval 001) has a clean LOF -> protective phenotype chain -> inhibitor. CETP is the negative control: LOF raises HDL but does NOT cleanly reduce CHD, and CETP inhibitor trials have largely failed. The dominant scientific interpretation is that HDL elevation alone is not a reliable surrogate. A model that just applies 'LOF -> inhibitor' here is wrong. The correct answer is 'unclear' because the evidence file explicitly states mixed MR results, mixed homozygote phenotypes, and a string of failed trials. An 'inhibitor' answer would be defensible only by ignoring the trial-history paragraph and the mixed-genetics paragraph - i.e. by reading half the document."
+}

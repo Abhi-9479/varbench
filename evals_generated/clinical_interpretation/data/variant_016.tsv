@@ -1,0 +1,10 @@
+field	value
+gene	HNF1A
+hgvs	NM_000545.8(HNF1A):c.864del (p.Pro291fs)
+chrom	12
+pos	120994311
+ref	CG
+alt	C
+variant_type	Deletion
+last_evaluated_year	2025
+annotation_source	NCBI ClinVar

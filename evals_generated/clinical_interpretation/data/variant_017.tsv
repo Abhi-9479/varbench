@@ -1,0 +1,10 @@
+field	value
+gene	PAH
+hgvs	NM_000277.3(PAH):c.205C>T (p.Pro69Ser)
+chrom	12
+pos	102894882
+ref	G
+alt	A
+variant_type	single nucleotide variant
+last_evaluated_year	2023
+annotation_source	NCBI ClinVar

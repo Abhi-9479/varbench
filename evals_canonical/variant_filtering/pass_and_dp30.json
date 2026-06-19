@@ -1,0 +1,25 @@
+{
+  "id": "variant_filtering_001_pass_and_dp30",
+  "category": "variant_filtering",
+  "subcategory": "compound_filter",
+  "title": "Variants passing FILTER=PASS AND DP>=30",
+  "description": "Apply a compound filter: keep only variants where the FILTER column is exactly 'PASS' AND the per-sample read depth (DP in the FORMAT/SAMPLE) is at least 30. Count the survivors. Tests boolean composition of two filters.",
+  "task_prompt": "You are given a VCF file at sample.vcf in your working directory. Apply BOTH of the following filters and count how many variant records survive: (1) the FILTER column (column 7) is exactly 'PASS', AND (2) the per-sample read depth is >= 30. The per-sample depth is the DP subfield of the SAMPLE1 column (the last column); the position of DP within that colon-separated value is given by the FORMAT column (column 9). Both conditions must hold. Write your answer as JSON to eval_answer.json with the schema: {\"n_passing\": <integer>}.",
+  "inputs": [
+    {
+      "path": "sample.vcf",
+      "source": "../vcf_qc/data/sample.vcf",
+      "description": "Shared 10-variant synthetic VCF"
+    }
+  ],
+  "answer_key": "n_passing",
+  "expected_answer": 5,
+  "grader": {
+    "type": "exact",
+    "case_sensitive": true
+  },
+  "difficulty": "medium",
+  "tags": ["vcf", "filter", "compound", "format_field"],
+  "version": "0.1.0",
+  "notes": "PASS rows: chr1:1000 DP=30, chr1:3000 DP=45, chr2:1500 DP=60, chr2:2500 DP=22, chr3:5000 DP=50, chr3:7000 DP=80. Of these, chr2:2500 has DP=22 < 30, so 5 survive."
+}

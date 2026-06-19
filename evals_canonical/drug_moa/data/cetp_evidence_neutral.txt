@@ -1,0 +1,40 @@
+Gene: CETP (cholesteryl ester transfer protein)
+
+Function:
+- CETP mediates exchange of cholesteryl esters and triglycerides between
+  HDL and apoB-containing lipoproteins (LDL, VLDL).
+- Genetic loss of CETP activity is associated with elevated HDL-C and
+  modestly reduced LDL-C.
+
+Carrier-versus-noncarrier observations from published cohorts:
+- Common East Asian variant p.Asp442Gly: +13% HDL-C, -4% LDL-C.
+  Reported CHD odds ratios across published meta-analyses: 0.93, 0.97,
+  1.04, 0.89, 1.02 (six independent studies, no formal pooled estimate
+  available in this brief).
+- European TaqIB B2 allele (intronic, partial-LOF tag): +8% HDL-C.
+  Reported CHD effect: meta-analytic OR 0.95 (95% CI 0.90-1.00).
+- Rare homozygous CETP-deficient probands (Japan, n~30 published cases):
+  HDL-C 2-6x population mean. CHD outcomes are heterogeneous; some
+  kindreds report increased atherosclerotic burden despite high HDL-C,
+  others report apparent longevity.
+- Mendelian randomization analyses using CETP variants as instruments
+  for HDL-C yield estimates that are not consistently distinguishable
+  from zero effect on CHD across different variant sets and outcome
+  definitions.
+
+Clinical-trial observations (drug-class evidence, included as additional
+data for the analyst to weigh):
+- torcetrapib (CETP inhibitor + raised HDL-C +72%): increased all-cause
+  mortality in ILLUMINATE (HR 1.58), terminated.
+- dalcetrapib (CETP inhibitor, weaker on LDL): dal-OUTCOMES neutral
+  on CHD, terminated.
+- evacetrapib (CETP inhibitor, larger lipid effect): ACCELERATE neutral
+  on CHD, terminated.
+- anacetrapib (CETP inhibitor, longest exposure): REVEAL HR 0.91 for
+  major coronary events; not pursued commercially despite the signal.
+
+A pharmaceutical company is reviewing CETP as a target. Choose exactly
+one of:
+  - 'agonist'   : a drug that increases CETP activity
+  - 'inhibitor' : a drug that decreases CETP activity
+  - 'unclear'   : the human-genetics evidence does not cleanly favor either direction

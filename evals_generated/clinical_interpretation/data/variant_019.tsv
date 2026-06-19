@@ -1,0 +1,10 @@
+field	value
+gene	DCLRE1C
+hgvs	NM_001033855.3(DCLRE1C):c.404G>A (p.Gly135Glu)
+chrom	10
+pos	14935523
+ref	C
+alt	T
+variant_type	single nucleotide variant
+last_evaluated_year	2026
+annotation_source	NCBI ClinVar

@@ -1,0 +1,10 @@
+field	value
+gene	LDLR
+hgvs	NM_000527.5(LDLR):c.937T>C (p.Cys313Arg)
+chrom	19
+pos	11107511
+ref	T
+alt	C
+variant_type	single nucleotide variant
+last_evaluated_year	2023
+annotation_source	NCBI ClinVar

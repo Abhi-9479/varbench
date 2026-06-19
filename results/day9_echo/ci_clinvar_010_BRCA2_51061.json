@@ -1,0 +1,13 @@
+{
+  "eval_id": "ci_clinvar_010_BRCA2_51061",
+  "category": "clinical_interpretation",
+  "agent": "echo",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Pathogenic",
+  "actual": "Pathogenic",
+  "elapsed_sec": 0.0,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_010_BRCA2_51061",
+  "error": null
+}

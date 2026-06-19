@@ -1,0 +1,10 @@
+field	value
+gene	GCK
+hgvs	NM_000162.5(GCK):c.323A>T (p.Tyr108Phe)
+chrom	7
+pos	44152311
+ref	T
+alt	A
+variant_type	single nucleotide variant
+last_evaluated_year	2024
+annotation_source	NCBI ClinVar

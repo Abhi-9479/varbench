@@ -1,0 +1,2 @@
+gene	hgvs_c	hgvs_p	rsid	consequence	gnomad_af_overall	gnomad_af_afr	gnomad_af_amr	gnomad_af_nfe	gnomad_af_eas	gnomad_af_sas
+PCSK9	c.137G>T	p.Arg46Leu	rs11591147	missense_variant	0.0118	0.0014	0.0089	0.0184	0.0001	0.0023
