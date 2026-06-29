@@ -70,7 +70,7 @@ The two models tied on the overall pass rate. The category breakdown tells a mor
 | --- | --- | --- |
 | `vcf_qc` | **2/2** | 0/2 |
 | `variant_calling` | **1/1** | 0/1 |
-| `variant_filtering` | **4/4**  | 1/4 |
+| `variant_filtering` | 4/4  | 1/4 |
 | `population_genetics` | 1/1 | 1/1 |
 | `drug_moa` |/4** | 2/4 |
 | `clinical_interpretation` | 27/52 | **35/52** |
