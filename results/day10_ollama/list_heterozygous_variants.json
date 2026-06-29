@@ -1,0 +1,30 @@
+{
+  "eval_id": "variant_calling_001_list_heterozygous_variants",
+  "category": "variant_calling",
+  "agent": "ollama",
+  "passed": false,
+  "score": 0.0,
+  "reason": "missing=['chr1:1000:A:T', 'chr1:2000:G:C', 'chr1:4000:C:G', 'chr2:1500:A:G', 'chr2:2500:G:T', 'chr3:6000:A:G'] extra=['chr1:100:A:T', 'chr2:200:C:G']",
+  "expected": [
+    "chr1:1000:A:T",
+    "chr1:2000:G:C",
+    "chr1:4000:C:G",
+    "chr2:1500:A:G",
+    "chr2:2500:G:T",
+    "chr3:6000:A:G"
+  ],
+  "actual": [
+    "chr1:100:A:T",
+    "chr2:200:C:G"
+  ],
+  "elapsed_sec": 4.445,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_calling_001_list_heterozygous_variants",
+  "error": null,
+  "agent_meta": {
+    "iterations": 1,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

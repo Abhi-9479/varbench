@@ -1,0 +1,20 @@
+{
+  "eval_id": "vcf_qc_001_count_pass_variants",
+  "category": "vcf_qc",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "exact match",
+  "expected": 6,
+  "actual": 6,
+  "elapsed_sec": 13.124,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/vcf_qc_001_count_pass_variants",
+  "error": null,
+  "agent_meta": {
+    "iterations": 5,
+    "submitted": true,
+    "input_tokens": 9149,
+    "output_tokens": 514,
+    "model": "claude-sonnet-4-5"
+  }
+}

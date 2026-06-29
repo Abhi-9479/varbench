@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_004_pcsk9_with_noise",
+  "category": "drug_moa",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "inhibitor",
+  "actual": "inhibitor",
+  "elapsed_sec": 12.514,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_004_pcsk9_with_noise",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": 2973,
+    "output_tokens": 518,
+    "model": "claude-sonnet-4-5"
+  }
+}

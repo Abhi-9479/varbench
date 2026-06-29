@@ -1,0 +1,36 @@
+{
+  "eval_id": "variant_filtering_002_high_impact_consequences",
+  "category": "variant_filtering",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "Jaccard=1.000 >= 0.8 -> pass",
+  "expected": [
+    "chr1:2000:G:GA",
+    "chr1:4000:G:A",
+    "chr2:2500:T:C",
+    "chr2:4500:GT:G",
+    "chr3:2000:T:A",
+    "chr3:4000:G:A",
+    "chr6:2000:G:A"
+  ],
+  "actual": [
+    "chr1:2000:G:GA",
+    "chr1:4000:G:A",
+    "chr2:2500:T:C",
+    "chr2:4500:GT:G",
+    "chr3:2000:T:A",
+    "chr3:4000:G:A",
+    "chr6:2000:G:A"
+  ],
+  "elapsed_sec": 12.058,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_filtering_002_high_impact_consequences",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

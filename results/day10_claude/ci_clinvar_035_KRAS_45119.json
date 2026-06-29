@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_035_KRAS_45119",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Likely_benign",
+  "actual": "Likely_benign",
+  "elapsed_sec": 21.37,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_035_KRAS_45119",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": true,
+    "input_tokens": 4873,
+    "output_tokens": 1103,
+    "model": "claude-sonnet-4-5"
+  }
+}

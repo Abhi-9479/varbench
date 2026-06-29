@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_023_MSH2_90685",
+  "category": "clinical_interpretation",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Uncertain_significance",
+  "actual": "Uncertain_significance",
+  "elapsed_sec": 11.852,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_023_MSH2_90685",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

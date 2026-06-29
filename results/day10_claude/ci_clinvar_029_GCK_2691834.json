@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_029_GCK_2691834",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Uncertain_significance",
+  "actual": "Uncertain_significance",
+  "elapsed_sec": 59.604,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_029_GCK_2691834",
+  "error": null,
+  "agent_meta": {
+    "iterations": 7,
+    "submitted": true,
+    "input_tokens": 20213,
+    "output_tokens": 3045,
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_015_F8_368117",
+  "category": "clinical_interpretation",
+  "agent": "ollama",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 'Likely_pathogenic', got 'Pathogenic'",
+  "expected": "Likely_pathogenic",
+  "actual": "Pathogenic",
+  "elapsed_sec": 20.263,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_015_F8_368117",
+  "error": null,
+  "agent_meta": {
+    "iterations": 8,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

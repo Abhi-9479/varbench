@@ -1,0 +1,20 @@
+{
+  "eval_id": "variant_filtering_003_multi_condition",
+  "category": "variant_filtering",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "exact match",
+  "expected": 2,
+  "actual": 2,
+  "elapsed_sec": 21.83,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/variant_filtering_003_multi_condition",
+  "error": null,
+  "agent_meta": {
+    "iterations": 6,
+    "submitted": true,
+    "input_tokens": 14385,
+    "output_tokens": 1200,
+    "model": "claude-sonnet-4-5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_020_PAH_102782",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 'Likely_pathogenic', got 'Pathogenic'",
+  "expected": "Likely_pathogenic",
+  "actual": "Pathogenic",
+  "elapsed_sec": 19.233,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_020_PAH_102782",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": true,
+    "input_tokens": 4646,
+    "output_tokens": 850,
+    "model": "claude-sonnet-4-5"
+  }
+}

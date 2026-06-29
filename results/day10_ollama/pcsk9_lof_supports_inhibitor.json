@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_001_pcsk9_lof_supports_inhibitor",
+  "category": "drug_moa",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "inhibitor",
+  "actual": "inhibitor",
+  "elapsed_sec": 5.093,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_001_pcsk9_lof_supports_inhibitor",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": false,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

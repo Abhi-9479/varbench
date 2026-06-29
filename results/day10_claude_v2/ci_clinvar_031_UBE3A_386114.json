@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_031_UBE3A_386114",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 'Likely_benign', got 'Benign'",
+  "expected": "Likely_benign",
+  "actual": "Benign",
+  "elapsed_sec": 28.226,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_031_UBE3A_386114",
+  "error": null,
+  "agent_meta": {
+    "iterations": 4,
+    "submitted": true,
+    "input_tokens": 7774,
+    "output_tokens": 1268,
+    "model": "claude-sonnet-4-5"
+  }
+}

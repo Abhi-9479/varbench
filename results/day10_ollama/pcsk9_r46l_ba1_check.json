@@ -1,0 +1,20 @@
+{
+  "eval_id": "population_genetics_001_pcsk9_r46l_ba1_check",
+  "category": "population_genetics",
+  "agent": "ollama",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "no",
+  "actual": "no",
+  "elapsed_sec": 11.154,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/population_genetics_001_pcsk9_r46l_ba1_check",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": false,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

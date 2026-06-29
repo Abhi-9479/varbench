@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_003_cetp_neutral_evidence",
+  "category": "drug_moa",
+  "agent": "ollama",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 'unclear', got 'inhibitor'",
+  "expected": "unclear",
+  "actual": "inhibitor",
+  "elapsed_sec": 11.535,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_003_cetp_neutral_evidence",
+  "error": null,
+  "agent_meta": {
+    "iterations": 5,
+    "submitted": true,
+    "input_tokens": null,
+    "output_tokens": null,
+    "model": "qwen2.5:7b-instruct"
+  }
+}

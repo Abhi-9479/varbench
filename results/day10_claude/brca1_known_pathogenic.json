@@ -1,0 +1,20 @@
+{
+  "eval_id": "clinical_interpretation_001_brca1_known_pathogenic",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Pathogenic",
+  "actual": "Pathogenic",
+  "elapsed_sec": 22.08,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/clinical_interpretation_001_brca1_known_pathogenic",
+  "error": null,
+  "agent_meta": {
+    "iterations": 3,
+    "submitted": true,
+    "input_tokens": 5290,
+    "output_tokens": 1224,
+    "model": "claude-sonnet-4-5"
+  }
+}

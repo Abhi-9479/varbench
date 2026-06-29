@@ -1,0 +1,20 @@
+{
+  "eval_id": "drug_moa_003_cetp_neutral_evidence",
+  "category": "drug_moa",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "unclear",
+  "actual": "unclear",
+  "elapsed_sec": 11.495,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/drug_moa_003_cetp_neutral_evidence",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": 3000,
+    "output_tokens": 548,
+    "model": "claude-sonnet-4-5"
+  }
+}

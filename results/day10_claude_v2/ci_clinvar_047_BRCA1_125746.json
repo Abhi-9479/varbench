@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_047_BRCA1_125746",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": true,
+  "score": 1.0,
+  "reason": "label matches",
+  "expected": "Benign",
+  "actual": "Benign",
+  "elapsed_sec": 13.17,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_047_BRCA1_125746",
+  "error": null,
+  "agent_meta": {
+    "iterations": 2,
+    "submitted": true,
+    "input_tokens": 2776,
+    "output_tokens": 542,
+    "model": "claude-sonnet-4-5"
+  }
+}

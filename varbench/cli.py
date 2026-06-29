@@ -104,3 +104,27 @@ def run(eval_path: Path, agent: str, model: str | None,
 
 if __name__ == "__main__":
     main()
+
+
+@main.command()
+@click.option("--model", "models", multiple=True, required=True,
+              help="LABEL=DIR pairs, repeatable. Multiple DIRs with same LABEL merge.")
+@click.option("--out", type=click.Path(path_type=Path), default=None,
+              help="Write Markdown to this path. Defaults to stdout.")
+def leaderboard(models: tuple, out: Path | None) -> None:
+    """Generate a side-by-side leaderboard from saved RunResult JSONs."""
+    from collections import defaultdict
+    from varbench.leaderboard import load_run, render_markdown
+    runs = defaultdict(dict)
+    for spec in models:
+        if "=" not in spec:
+            raise click.BadParameter(f"Expected LABEL=DIR, got {spec!r}")
+        label, path = spec.split("=", 1)
+        runs[label].update(load_run(Path(path)))
+    md = render_markdown(dict(runs))
+    if out:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(md)
+        console.print(f"Wrote leaderboard to {out}")
+    else:
+        console.print(md)

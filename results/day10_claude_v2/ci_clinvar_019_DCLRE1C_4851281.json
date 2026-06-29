@@ -1,0 +1,20 @@
+{
+  "eval_id": "ci_clinvar_019_DCLRE1C_4851281",
+  "category": "clinical_interpretation",
+  "agent": "claude",
+  "passed": false,
+  "score": 0.0,
+  "reason": "expected 'Likely_pathogenic', got 'Uncertain_significance'",
+  "expected": "Likely_pathogenic",
+  "actual": "Uncertain_significance",
+  "elapsed_sec": 48.076,
+  "work_dir": "/Users/abhyuday/Documents/varbench/results/runs/ci_clinvar_019_DCLRE1C_4851281",
+  "error": null,
+  "agent_meta": {
+    "iterations": 5,
+    "submitted": true,
+    "input_tokens": 13094,
+    "output_tokens": 2365,
+    "model": "claude-sonnet-4-5"
+  }
+}
